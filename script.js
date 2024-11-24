@@ -17,8 +17,8 @@ const winStates = [
 ];
  
 const playerSprites = {
-    playerCircle: 'img/circle.png',
-    playerX: 'img/x.png',
+    playerCircle: 'img/circle.jpg',
+    playerX: 'img/x.jpg',
 }
  
 const audioState = {
