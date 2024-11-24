@@ -17,8 +17,8 @@ const winStates = [
 ];
  
 const playerSprites = {
-    playerCircle: 'static/img/circle.png',
-    playerX: 'static/img/x.png',
+    playerCircle: 'img/circle.png',
+    playerX: 'img/x.png',
 }
  
 const audioState = {
@@ -62,8 +62,7 @@ function columnDOMClickHandler(event) {
  
     changeTheTurn();
 }
- 
-// helpers
+
 function loopThrowDOMS(doms, funcHandler) {
     const tmpDOMS = Array.from(doms);
     tmpDOMS.forEach(funcHandler);
