@@ -5,26 +5,40 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tic Tac Toe</title>
+    <title>game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <h1 class="game--title">Tic Tac Toe</h1>
-        <div class="game--container">
-            <div data-cell-index="0" class="cell"></div>
-            <div data-cell-index="1" class="cell"></div>
-            <div data-cell-index="2" class="cell"></div>
-            <div data-cell-index="3" class="cell"></div>
-            <div data-cell-index="4" class="cell"></div>
-            <div data-cell-index="5" class="cell"></div>
-            <div data-cell-index="6" class="cell"></div>
-            <div data-cell-index="7" class="cell"></div>
-            <div data-cell-index="8" class="cell"></div>
+    <div class="container">
+        
+        <h1 class="score">
+            <span class="score-playerCircle">0</span>
+            <span class="score-seperator"> - </span>
+            <span class="score-playerX">0</span>
+        </h1>
+        <div class="tictoc-wrapper">
+            <div id="bg"></div>
+            <div class="row row-1">
+                <div class="col-4 c1"></div>
+                <div class="col-4 c2"></div>
+                <div class="col-4 c3"></div>
+            </div>
+            <div class="row row-2">
+                <div class="col-4 c4"></div>
+                <div class="col-4 c5"></div>
+                <div class="col-4 c6"></div>
+            </div>
+            <div class="row row-3">
+                <div class="col-4 c7"></div>
+                <div class="col-4 c8"></div>
+                <div class="col-4 c9"></div>
+            </div>
+            <div class="turn">
+                <img src="img/circle.png" id="playerCircle" class="player">
+                <img src="img/x.png" id="playerX" class="player">
+            </div>
         </div>
-        <h2 class="game--status"></h2>
-        <button class="game--restart">Restart Game</button>
-    </section>
+    </div>
 <script src="script.js"></script>
 </body>
 </html>
